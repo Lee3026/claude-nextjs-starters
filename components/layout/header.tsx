@@ -7,7 +7,8 @@ import { Menu } from 'lucide-react';
 import { Container } from './container';
 import { ThemeToggle } from './theme-toggle';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
+import { VisuallyHidden } from '@/components/ui/visually-hidden';
 import { cn } from '@/lib/utils';
 import type { NavItem } from '@/types';
 
@@ -21,12 +22,8 @@ const navItems: NavItem[] = [
     href: '/',
   },
   {
-    title: 'Components',
-    href: '/examples/components',
-  },
-  {
-    title: 'Forms',
-    href: '/examples/forms',
+    title: '예제',
+    href: '/examples',
   },
 ];
 
@@ -78,7 +75,13 @@ export function Header({ className }: HeaderProps) {
                   <span className="sr-only">메뉴 열기</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+              <SheetContent side="left" className="w-[300px] sm:w-[400px] p-6">
+                <VisuallyHidden>
+                  <SheetTitle>메인 네비게이션</SheetTitle>
+                  <SheetDescription>
+                    사이트의 주요 페이지로 이동할 수 있는 네비게이션 메뉴입니다.
+                  </SheetDescription>
+                </VisuallyHidden>
                 <nav className="flex flex-col gap-4">
                   <Link href="/" className="flex items-center space-x-2 mb-4">
                     <span className="font-bold text-xl">Next.js Starter</span>

@@ -14,7 +14,7 @@ export default function Home() {
           description="프로덕션 레벨의 TypeScript, TailwindCSS, ShadcnUI가 완벽하게 통합된 Next.js 16 스타터킷. 다크모드, 반응형 레이아웃, 폼 검증까지 모든 기능을 즉시 사용하세요."
           primaryCta={{
             text: '시작하기',
-            href: '/examples/components',
+            href: '/examples',
           }}
           secondaryCta={{
             text: 'GitHub',
