@@ -200,30 +200,6 @@ npx shadcn@latest add [component-name]
 
 사용 가능한 컴포넌트 목록: https://ui.shadcn.com/docs/components
 
-## 개발 가이드
-
-### 페이지 편집
-1. `app/page.tsx` 파일을 수정하여 메인 페이지 편집
-2. `components/` 폴더에서 필요한 컴포넌트 재사용
-3. `app/examples/` 폴더의 예제 코드 참고
-4. 새로운 페이지는 `app/` 폴더에 추가
-
-파일을 편집하면 페이지가 자동으로 업데이트됩니다.
-
-### 컴포넌트 사용 예시
-
-```tsx
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-
-export default function MyPage() {
-  return (
-    <Card>
-      <Button variant="default">클릭하세요</Button>
-    </Card>
-  )
-}
-```
 
 ## 폰트 최적화
 
