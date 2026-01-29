@@ -8,10 +8,10 @@ export default function Home() {
     <>
       <Container>
         <Hero
-          badge="Next.js 15"
+          badge="Next.js 16"
           title="모던 웹 개발을 위한 완벽한 스타터킷"
           subtitle="빠르게 시작하는 현대적인 웹 개발"
-          description="프로덕션 레벨의 TypeScript, TailwindCSS, ShadcnUI가 완벽하게 통합된 Next.js 15 스타터킷. 다크모드, 반응형 레이아웃, 폼 검증까지 모든 기능을 즉시 사용하세요."
+          description="프로덕션 레벨의 TypeScript, TailwindCSS, ShadcnUI가 완벽하게 통합된 Next.js 16 스타터킷. 다크모드, 반응형 레이아웃, 폼 검증까지 모든 기능을 즉시 사용하세요."
           primaryCta={{
             text: '시작하기',
             href: '/examples/components',
